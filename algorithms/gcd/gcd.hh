@@ -8,8 +8,8 @@ int main(int argc, char* argv[]) {
     int a[n], b[n];
 
     for (int i = 0; i < n; i++) {
-        a[i] = rand() % 1000000;
-        b[i] = rand() % 1000000;
+        a[i] = rand() % 1000000000;
+        b[i] = rand() % 1000000000;
     }
 
     volatile int checksum = 0;
@@ -20,8 +20,7 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < k; i++)
         for (int j = 0; j < n; j++)
             checksum += gcd(a[j], b[j]);
-            //checksum += gcd(i + 1, j + 1);
-
+    
     float seconds = float(clock() - start) / CLOCKS_PER_SEC;
 
     printf("%d\n", checksum);
