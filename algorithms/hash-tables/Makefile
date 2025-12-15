@@ -1,4 +1,5 @@
-compile = g++ -std=c++17 -O3 -march=native -Wall
+CXX ?= c++
+compile = $(CXX) -std=c++17 -O3 -march=native -Wall
 
 %: %.cc hashmap.hh
 	$(compile) $< -o $@ 

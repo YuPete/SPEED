@@ -1,4 +1,10 @@
-#include <bits/stdc++.h>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <map>
+#include <unordered_map>
 using namespace std;
 
 void setup();
